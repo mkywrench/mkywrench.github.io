@@ -1,0 +1,50 @@
+{
+  "name": "Hourglass Teaser: Issue #0",
+  "short_name": "Hourglass-00",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "icons": [{
+      "src": "icons/ag-logo-white-red_72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "icons/ag-logo-white-red_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/ag-logo-white-red_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "icons/ag-logo-white-red_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icons/ag-logo-white-red_152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "icons/ag-logo-white-red_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/ag-logo-white-red_384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "icons/ag-logo-white-red_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

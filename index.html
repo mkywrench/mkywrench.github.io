@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hourglass</title>
+  <link rel="stylesheet" href="css/comic-viewer.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/wxw8kpr.css">
+  <link rel="manifest" href="manifest.json" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Hourglass" />
+  <link rel="apple-touch-icon" href="/icons/ag-logo-white-red_152.png" />
+  <meta name="description" content="Hourglass Teaser: Issue #0" />
+  <meta name="theme-color" content="rgba(255,255,255,0.1)" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_72.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_96.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_128.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_144.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_152.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_192.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_384.png" />
+  <link rel="apple-touch-icon" href="icons/ag-logo-white-red_512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+  <meta name="theme-color" content="#2F3BA2" />
+</head>
+
+<body>
+  <div class="container-presentation">
+    <header class="header-bar">
+      <h1>Hourglass Teaser: Issue #0</h1>
+      <button id="btnInstall" label="Install" hidden></button>
+    </header>
+    <!-- -->
+    <div class="section-display">
+      <div class="section-controls">
+        <div class="view-menu-wrapper">
+          <div class="cpanel-wrapper">
+            <div class="view-panel">
+              <div class="wrapper-buttons">
+                <a id="prevBtn" href="#" class="control-panel-button">&lt;&lt; prev</a>
+                <a id="menuBtn" href="#" class="control-panel-button">menu</a>
+                <a id="nextBtn" href="#" class="control-panel-button">next &gt;&gt;</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="menu-block">
+          <div class="menu">
+            <div class="menu-wrapper">
+              <a href="#" class="menu-item-trigger"></a>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="displaystage">
+          <div id="mainstage" class="display-stage-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/hourglass-data-00.js" type="text/javascript"></script>
+    <script src="js/comic-viewer.js" type="text/javascript"></script>
+    <script src="js/install.js" type="text/javascript"></script>
+    <script>
+      //Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register("serviceWorker.js")
+            .then(reg => console.log("Service Worker: Registered.", reg))
+            .catch(err => console.log("Service Worker: Damn...ERROR"));
+        });
+      }
+    </script>
+
+</body>
+
+</html>
